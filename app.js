@@ -1,10 +1,10 @@
 import express from "express";
+import urlRouter from "./routes/urlRoute.js";
 
 const app = express();
+
 app.use(express.json());
 
-app.get("/", (req, res) => {
-	res.send("Hello World from my express app!");
-});
+app.use("/", urlRouter);
 
 export default app;
