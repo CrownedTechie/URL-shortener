@@ -10,7 +10,8 @@
 	"type": "module",
 	"main": "app.js",
 	"scripts": {
-		"start": "nodemon server.js"
+		"start": "node server.js",
+		"dev": "nodemon server.js"
 	},
 	"dependencies": {
 		"cors": "^2.8.6",
