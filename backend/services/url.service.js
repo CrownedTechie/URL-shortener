@@ -6,7 +6,7 @@ export const getNextId = async () => {
 	const counter = await counterModel.findOneAndUpdate(
 		{ name: "url_count" },
 		{ $inc: { value: 1 } },
-		{ new: true, upsert: true },
+		{ returnDocument: "after", upsert: true },
 	);
 
 	return counter.value;

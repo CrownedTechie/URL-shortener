@@ -11,7 +11,7 @@ export const shortenUrl = async (req, res) => {
 
 		res.status(201).json({
 			status: "success",
-			data: { ...result._doc, shortUrl },
+			data: { ...result.toObject(), shortUrl },
 		});
 	} catch (error) {
 		res.status(400).json({ status: "fail", message: error.message });

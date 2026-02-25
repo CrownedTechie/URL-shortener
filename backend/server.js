@@ -14,7 +14,7 @@ const DB = process.env.DATABASE_PROD.replace(
 mongoose
 	.connect(DB)
 	.then(() => {
-		console.log("Atlas DB connection successful");
+		console.log("DB connection successful");
 	})
 	.catch((error) => console.log(error));
 
