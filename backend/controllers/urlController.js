@@ -1,4 +1,4 @@
-import UrlModel from "../models/UrlModel.js";
+import UrlModel from "../models/urlModel.js";
 import { createShortUrl } from "../services/url.service.js";
 
 export const shortenUrl = async (req, res) => {

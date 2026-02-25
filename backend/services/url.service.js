@@ -1,5 +1,5 @@
 import counterModel from "../models/counterModel.js";
-import UrlModel from "../models/UrlModel.js";
+import UrlModel from "../models/urlModel.js";
 import { encodeBase62 } from "../utils/base62Encoder.js";
 
 export const getNextId = async () => {
